@@ -31,12 +31,6 @@
             padding: 10px;
             border-radius: 10px;
         }
-        .numero {
-            display: inline-block;
-            min-width: 90px;
-            font-size: 2em;
-            font-weight: bold;
-        }
         .imagem {
             margin-top: 20px;
             max-width: 50%; /* Reduzindo o tamanho da imagem */
@@ -79,12 +73,12 @@
             const anos = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 365));
 
             document.getElementById("contador").innerHTML = ` 
-                <span class="numero">${anos} anos</span> 
-                <span class="numero">${meses} meses</span> 
-                <span class="numero">${dias} dias</span> 
-                <span class="numero">${horas}h</span> 
-                <span class="numero">${minutos}m</span> 
-                <span class="numero">${segundos}s</span>
+                <span class="numero">${anos} anos,</span> 
+                <span class="numero">${meses} meses,</span> 
+                <span class="numero">${dias} dias,</span> 
+                <span class="numero">${horas} horas,</span> 
+                <span class="numero">${minutos} minutos,</span> 
+                <span class="numero">${segundos} segundos</span>
             `;
         }
         setInterval(atualizarContador, 1000);
@@ -103,3 +97,4 @@
     </script>
 </body>
 </html>
+
