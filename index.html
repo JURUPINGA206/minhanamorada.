@@ -35,16 +35,6 @@
             max-width: 50%;
             border-radius: 10px;
         }
-        .botao-musica {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1em;
-            border: none;
-            border-radius: 10px;
-            background: white;
-            color: black;
-            cursor: pointer;
-        }
         .galeria {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -64,14 +54,6 @@
     <div id="contador"></div>
     <img class="imagem" src="https://i.imgur.com/8UKeunR.jpeg" alt="Imagem do casal">
     
-    <!-- Tag de áudio com o arquivo MP3 -->
-    <audio id="musica" loop>
-        <source src="musica.mp3" type="audio/mp3">
-        Seu navegador não suporta áudio HTML5.
-    </audio>
-    
-    <button class="botao-musica" onclick="tocarMusica()">Play/Pause 🎵</button>
-    
     <h2>Galeria de Fotos</h2>
     <div class="galeria">
         <img src="https://i.imgur.com/TFQlBsi.jpeg" alt="Foto 1">
@@ -82,16 +64,5 @@
         <img src="https://i.imgur.com/l3SS4jw.jpeg" alt="Foto 6">
         <img src="https://i.imgur.com/AvMfhbk.jpeg" alt="Foto 7">
     </div>
-    
-    <script>
-        function tocarMusica() {
-            const musica = document.getElementById("musica");
-            if (musica.paused) {
-                musica.play();
-            } else {
-                musica.pause();
-            }
-        }
-    </script>
 </body>
 </html>
